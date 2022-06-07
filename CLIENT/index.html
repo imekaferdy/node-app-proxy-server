@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div class="container">
+
+         <!--main-->
+         <main class="cont-main">
+            <h3>the Weather</h3>
+            <div class="temperature">
+                <div id="temp">16&deg;</div>
+                <div id="place">Lagos</div>
+                <p class="date" id="date">06:09-Monday, 9 sep `19</p>
+                <img src="" alt="" class="icon">
+                <h4 class="cloudy">Cloudy</h4>
+            </div>
+        </main>
+        
+        <!--sidebar-->
+        <aside class="cont-sidebar">
+            <div id="search">
+                <input type="text" id="search-location" placeholder="Another Location">
+                <button type="button" onclick="weather.search()" id="btn">&#127859;</button>
+                <hr>
+            </div>
+
+            <div class="places">
+                <p>Abuja</p>
+                <p>Lagos</p>
+                <p>Enugu</p>
+                <p>Kano</p>
+            </div>
+
+            <hr>
+
+            <div class="details">
+                <h3>Weather Details</h3>
+            </div>
+
+            <div class="weather">
+                <p>Cloud<span id="describe">86%</span></p>          
+                <p>Humidity<span id="humidity">26%</span></p>
+                <p>Wind<span id="wind-speed">8km/h</span></p>
+            </div>
+            <hr>
+        </aside>
+    </div>
+</body>
+<script src="./main.js" defer></script>
+</html>
